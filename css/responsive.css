@@ -1,0 +1,369 @@
+@media only screen and (min-width: 320px) {
+    
+/* ================ HEADER ================ */
+
+    .header {
+        min-height: inherit;
+        background-image: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 30px 0 60px 0;
+    }
+    .title span:nth-child(1) {
+        font-size: 1.2rem;
+    }
+    .title span:nth-child(2) {
+        font-size: 2rem;
+    }
+    .title span:nth-child(3) {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .navbar-form {
+        padding: 10px 15px;
+    }
+    .form-reg-link {
+        margin: 0;
+        text-align: center;
+    }
+    .navbar-form .btn {
+        width: 100%;
+    }
+    .btn-blue {
+        width: 250px;
+    }
+    .header .form-control {
+        width: 100%;
+    }
+/* ================ ABOUT ================ */
+
+    .about div:nth-child(1) {
+        font-size: 1rem;
+    }   
+    .about div:nth-child(2) {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }    
+    .btn-orange {
+        width: 250px;
+        margin-bottom: 50px;
+    }
+
+/* ================ PAY ================ */
+
+    .pay-header {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .pay-method-list {
+        text-align: center;
+        margin: 0 0 40px 0;
+    }
+    .block-pay .btn-wrap {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .pay-warning {
+        font-size: 0.7rem;
+    }
+
+/* ================ ADVANTAGES ================ */
+
+    .block-advantages {
+        background-image: url(../img/desk-xs-sm.jpg);
+        background-size: cover;
+    }
+
+/* ================ PUBLICATION ================ */
+
+    .block-publication {
+        padding: 50px 0 10px 0;
+    }
+    .block-publication img {
+        margin: 0 auto 20px;
+    }
+    .publication-text div:nth-child(2) {
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 20px;
+    }
+
+/* ================ FOOTER ================ */
+
+    .footer .logo {
+        font-size: 0.5rem;
+    }
+
+}
+@media only screen and (min-width: 480px) {
+
+/* ================ HEADER ================ */
+    .about div:nth-child(3) {
+        font-size: 1rem;
+    }
+    .about div:nth-child(4) {
+        font-size: 0.74rem;
+    }
+    .btn-blue {
+        width: 300px;
+    }
+    .title span:nth-child(1) {
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+    .title span:nth-child(2) {
+        font-size: 3.75rem;
+        margin-bottom: 35px;
+    }
+    .title span:nth-child(3) {
+        font-size: 1.8rem;
+        margin-bottom: 70px;
+    }
+    .title span:nth-child(4) {
+        font-size: 0.875rem;
+        margin-bottom: 80px;
+    }
+    .form-reg-link {
+        margin: 0;
+        text-align: right;
+    }
+/* ================ ABOUT ================ */
+
+    .block-about {
+        text-align: center;
+    }
+    .btn-group {
+        display: table;
+        margin: 0 auto;
+    }
+    .btn-orange {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    /* ================ PAY ================ */
+
+    .pay-wrap {
+        margin: 0 auto;
+    }
+
+/* ================ ADVANTAGES ================ */
+
+    .advantage {
+        height: 235px;
+        margin: 0 auto;
+        width: 35%;
+    }
+
+/* ================ PUBLICATION ================ */
+/* ================ FOOTER ================ */
+
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+
+/* ================ HEADER ================ */
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 11px;
+    }
+    .navbar-form .btn {
+        width: inherit; 
+    }
+    .title span:nth-child(1) {
+        font-size: 1.8rem;
+    }
+    .title span:nth-child(2) {
+        font-size: 3.75rem;
+    }
+    .btn-blue, .btn-orange {
+        width: 300px;
+    }
+
+/* ================ ABOUT ================ */
+
+    .about {
+        text-align: center;
+    }
+    .about div:nth-child(3) {
+        font-size: 1.125rem;
+    }
+    .about div:nth-child(4) {
+        font-size: 0.875rem;
+    }
+    .btn-group {
+        margin: 0 auto 50px;
+    }
+    .about .btn-orange {
+        margin-bottom: 0px;
+    }
+    .steps {
+        text-align: left;
+    }
+
+/* ================ PAY ================ */
+
+    .pay-wrap {
+        margin: 0 auto;
+    }
+
+/* ================ ADVANTAGES ================ */
+
+    .block-advantages {
+        background-image: url(../img/desk-xs-sm.jpg);
+        background-size: cover;
+    }
+    .advantage {
+        width: 100%;
+    }
+
+/* ================ PUBLICATION ================ */
+/* ================ FOOTER ================ */
+
+}
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+
+/* ================ HEADER ================ */
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 11px;
+    }
+/*    .header .form-control {
+        width: 90px;
+    }*/
+    .navbar-form .btn {
+        width: auto;
+    }
+    .title span:nth-child(1) {
+        font-size: 1.8rem;
+    }
+    .title span:nth-child(2) {
+        font-size: 3.75rem;
+    }
+    .btn-blue, .btn-orange {
+        width: 300px;
+    }
+
+/* ================ ABOUT ================ */
+
+    .about {
+        text-align: center;
+    }
+    .about div:nth-child(3) {
+        font-size: 1.125rem;
+    }
+    .about div:nth-child(4) {
+        font-size: 0.875rem;
+    }
+    .btn-group {
+        margin: 0 auto 50px;
+    }
+    .about .btn-orange {
+        margin-bottom: 0px;
+    }
+    .steps {
+        text-align: left;
+    }
+
+/* ================ PAY ================ */
+
+    .pay-wrap {
+        margin: 0 auto;
+    }
+
+/* ================ ADVANTAGES ================ */
+
+    .block-advantages {
+        background-image: url(../img/desk-xs-sm.jpg);
+        background-size: cover;
+    }
+    .advantage {
+        width: 100%;
+    }
+
+/* ================ PUBLICATION ================ */
+/* ================ FOOTER ================ */
+
+@media only screen and (min-width: 992px) and (max-width: 1140px) {
+
+    .about {
+        text-align: left;
+    }
+    .btn-group {
+        margin: 0 0 50px 0;
+    }
+    .diplom {
+        position: relative;
+    }
+    .diplom img {
+        position: absolute;
+        top: 43px;
+    }
+    .pay-header {
+        text-align: left;
+    }
+    .pay-method-list {
+        text-align: left;
+    }
+    .block-pay .btn-wrap {
+        text-align: left;
+    }
+    .block-advantages {
+        background-image: url(../img/desk.jpg);
+        background-size: cover;
+    }
+}
+@media only screen and (min-width: 1140px) {
+
+/* ================ HEADER ================ */
+    .header {
+        min-height: 744px;
+        background-image: url(../img/bg-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px 0 60px 0;
+    }
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+    }
+    .form-reg-link {
+        text-align: right;
+    }
+    .navbar-form {
+        padding: 0px; 
+    }
+    .header .form-control {
+        width: auto;
+    }
+
+/* ================ ABOUT ================ */
+    .about {
+        text-align: left;
+    }
+    .btn-group {
+        margin: 0 0 50px 0;
+    }
+/* ================ PAY ================ */
+    .pay-header {
+        text-align: left;
+    }
+    .pay-method-list {
+        text-align: left;
+    }
+    .block-pay .btn-wrap {
+        text-align: left;
+    }
+/* ================ ADVANTAGES ================ */
+
+    .block-advantages {
+        background-image: url(../img/desk.jpg);
+        background-size: cover;
+    }
+
+/* ================ PUBLICATION ================ */
+/* ================ FOOTER ================ */
+
+}

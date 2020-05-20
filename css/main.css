@@ -1,0 +1,595 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html { 
+	font-size:16px; 
+}
+body {
+	color: #000;
+}
+a {
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+button, input {
+    transition: all 0.5s ease;
+}
+p {
+    line-height: 1.6rem;
+}
+.orange-text {
+    color: #ffd262;
+}
+.orange-bg {
+    background-color: #fcd343;
+}
+.blue-text {
+    color: #2ba9ec;
+}
+.blue-bg {
+    background-color: #2ba9ec;
+}
+.btn-blue {
+    width: 300px;
+    height: 50px;
+    background-color: #2ba9ec;
+    color: #fff;
+    font-family: "SFUIDisplay-Light";
+    border-radius: 25px;
+    font-size: 0.875rem;
+    border: none;
+}
+.btn-blue:hover {
+    background-color: #fff;
+    color: #2ba9ec;
+}
+.btn-blue-orange {
+    width: 300px;
+    height: 50px;
+    background-color: #2ba9ec;
+    color: #fff;
+    font-family: "SFUIDisplay-Light";
+    border-radius: 25px;
+    font-size: 0.875rem;
+    border: none;
+}
+.btn-blue-orange:hover {
+    background-color: #fcd343;
+    color: #000;
+}
+.btn-orange {
+    height: 50px;
+    width: 300px;
+    background-color: #fcd343;
+    color: #000;
+    font-family: "SFUIDisplay-Light"; 
+    border-radius: 25px;
+    font-size: 0.875rem;
+    border: none;   
+}
+.btn-orange:hover {
+    background-color: #2ba9ec;
+    color: #fff;  
+}
+@font-face {
+    font-family: "LCChalk";
+    src: url("../fonts/LCChalk.eot");
+    src: url("../fonts/LCChalk.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/LCChalk.woff") format("woff"),
+    url("../fonts/LCChalk.ttf") format("truetype"),
+    url("../fonts/LCChalk.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Black";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Black/SFUIDisplay-Black.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Black/SFUIDisplay-Black.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Black/SFUIDisplay-Black.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Black/SFUIDisplay-Black.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Black/SFUIDisplay-Black.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Bold";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Bold/SFUIDisplay-Bold.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Bold/SFUIDisplay-Bold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Bold/SFUIDisplay-Bold.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Bold/SFUIDisplay-Bold.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Bold/SFUIDisplay-Bold.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Heavy";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Heavy/SFUIDisplay-Heavy.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Heavy/SFUIDisplay-Heavy.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Heavy/SFUIDisplay-Heavy.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Heavy/SFUIDisplay-Heavy.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Heavy/SFUIDisplay-Heavy.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Light";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Light/SFUIDisplay-Light.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Light/SFUIDisplay-Light.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Light/SFUIDisplay-Light.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Light/SFUIDisplay-Light.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Light/SFUIDisplay-Light.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Medium";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium/SFUIDisplay-Medium.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium/SFUIDisplay-Medium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Medium/SFUIDisplay-Medium.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Medium/SFUIDisplay-Medium.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Medium/SFUIDisplay-Medium.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Regular";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Regular/SFUIDisplay-Regular.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Regular/SFUIDisplay-Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Regular/SFUIDisplay-Regular.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Regular/SFUIDisplay-Regular.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Regular/SFUIDisplay-Regular.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Semibold";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Semibold/SFUIDisplay-Semibold.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Semibold/SFUIDisplay-Semibold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Semibold/SFUIDisplay-Semibold.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Semibold/SFUIDisplay-Semibold.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Semibold/SFUIDisplay-Semibold.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Thin";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Thin/SFUIDisplay-Thin.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Thin/SFUIDisplay-Thin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Thin/SFUIDisplay-Thin.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Thin/SFUIDisplay-Thin.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Thin/SFUIDisplay-Thin.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SFUIDisplay-Ultralight";
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Ultralight/SFUIDisplay-Ultralight.eot");
+    src: url("../fonts/SFUIDisplay/SFUIDisplay-Ultralight/SFUIDisplay-Ultralight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Ultralight/SFUIDisplay-Ultralight.woff") format("woff"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Ultralight/SFUIDisplay-Ultralight.ttf") format("truetype"),
+    url("../fonts/SFUIDisplay/SFUIDisplay-Ultralight/SFUIDisplay-Ultralight.svg") format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.font-sf-thin {
+    font-family: "SFUIDisplay-Thin";
+}
+.font-sf-light {
+    font-family: "SFUIDisplay-Light";
+}
+.font-sf-regular {
+    font-family: "SFUIDisplay-Regular";
+}
+.font-sf-medium {
+    font-family: "SFUIDisplay-Medium";
+}
+.font-sf-heavy {
+    font-family: "SFUIDisplay-Heavy";
+}
+.font-sf-ultralight {
+    font-family: "SFUIDisplay-Ultralight";
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header {
+    min-height: 744px;
+    background-image: url(../img/bg-lg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px 0 60px 0;
+}
+.navbar-brand {
+    padding: 10px 15px;
+    margin-right: 30px;
+}
+ul.navbar-nav {
+    padding-top: 5px;
+}
+.header .navbar-nav a {
+    color: #ffd262;
+    text-shadow: none;
+}
+.header .navbar-nav a:hover {
+    color: #fff;
+    background: none;
+    outline: 3px solid #fff;
+}
+.header .form-control {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border: none;
+    border-radius: 0;
+    width: auto;
+}
+.navbar-form {
+    padding: 0;
+}
+.navbar-form .form-control::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
+.navbar-form .form-control::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
+.navbar-form .form-control:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
+.navbar-form .form-control:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; color: #fff;}
+.navbar-form .form-control:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; color: #fff;}
+.navbar-form .form-control:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; color: #fff;}
+.navbar-form .form-control:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; color: #fff;}
+.navbar-form .form-control:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; color: #fff;}  
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.form-reg-link {
+    color: #fff;
+}
+.form-reg-link a:hover {
+    color: #ffd262;
+}
+.title {
+    color: #fff;
+}
+.title span {
+    display: block;
+}
+.title span:nth-child(1) {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+}
+.title span:nth-child(2) {
+    font-size: 3.75rem;
+    margin-bottom: 35px;
+}
+.title span:nth-child(3) {
+    font-size: 1.8rem;
+    margin-bottom: 70px;
+}
+.title span:nth-child(4) {
+    font-size: 0.875rem;
+    margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+.block-about {
+    padding: 50px 0 0px 0;
+}
+.diplom img {
+    margin: 0 auto;
+}
+.about div:nth-child(1) {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+
+}
+.about div:nth-child(2) {
+    font-size: 3rem;
+    margin-bottom: 35px;
+    line-height: 2.3rem;
+}
+.about div:nth-child(3) {
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    line-height: 2.2rem;
+}
+.about div:nth-child(4) {
+    font-size: 0.875rem;
+    line-height: 1.7rem;
+    margin-bottom: 55px;
+    color: #8E8E8E;
+}
+.btn-group {
+    display: table;
+}
+.block-about .btn-wrap {
+    display: table-cell;
+}
+.steps {
+    display: table-cell;
+    font-size: 0.875rem !important;
+    margin-bottom: 0px !important;
+    line-height: normal !important;
+    vertical-align: middle;
+    padding-left: 25px;
+}
+
+
+/* ==========================================================================
+   Pay
+   ========================================================================== */
+.block-pay {
+    padding: 43px 0 50px 0;
+    background-color: #f2f2f2;
+}
+.pay-header {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.pay-method-list {
+    font-size: 0.875rem;
+    margin: 0 0 60px 0;
+    text-align: left;
+}
+.pay-wrap {
+    display: table;
+}
+.pay-form {
+    display: table-row;
+}
+.pay-warning {
+    display: table-row;
+    text-align: center;
+    color:#8E8E8E;
+    font-size: 0.875rem;
+}
+.pay-warning span {
+    position: relative;
+    padding-left: 35px;
+}
+.pay-warning span:before {
+    content: url(../img/alert.png);
+    position: absolute;
+    top:-5px;
+    left:-2px;
+}
+
+/* ==========================================================================
+   Advantages
+   ========================================================================== */
+.block-advantages {
+/*    height: 235px;*/
+    background-image: url(../img/desk.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    font-family: "LCChalk";
+    color: #fff;
+}
+.advantage {
+    display: table;
+    height: 235px;
+}
+.adv-img {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 134px;
+}
+.adv-text {
+    display: table-row;
+    text-align: center;
+    vertical-align: top;
+}
+/* ==========================================================================
+   Public
+   ========================================================================== */
+
+.block-publication {
+    padding: 68px 0 50px 0;
+}
+.block-publication img {
+    margin: 0 auto;
+}
+.publication-text div:nth-child(1) {
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+}
+.publication-text div:nth-child(2) {
+    font-size: 3.75rem;
+    line-height: 4rem;
+    margin-bottom: 20px;
+}
+.publication-text div:nth-child(3) {
+    font-size: 1.125rem;
+    margin-bottom: 50px;
+}
+/* ==========================================================================
+   Footer
+   ========================================================================== */  
+
+.footer {
+    color: #fff;
+    height: 130px;
+    padding-top: 44px;
+}
+.footer p {
+    font-size: 0.75rem;
+    line-height: normal;
+}
+.footer .logo {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+}
+.footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.footer ul li:last-child {
+    display: inline-block;
+    margin-right: 0px;
+}
+.develop-wrap {
+    display: table;
+}
+.develop-text {
+    display: table-cell;
+    font-size: 0.75rem;
+    text-align: right;
+    line-height: 0.9rem;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.develop-logo {
+    display: table-cell;
+}
+
+/* ==========================================================================
+   RESULT PAGE
+   ========================================================================== */ 
+
+.content-wrap {
+    margin-bottom: 50px;
+}
+.col-search-user {
+    margin-bottom: 25px;
+}
+.tbody tr td:nth-child(2), .tbody tr td:nth-child(5) {
+    font-family: "SFUIDisplay-medium";
+}
+.page-title {
+    margin: 40px 0;
+}
+
+/* ==========================================================================
+   CONTACTS
+   ========================================================================== */ 
+
+.contacts .ask {
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+.contacts-item {
+    font-size: 1.2rem;
+}
+.contacts .glyphicon {
+    margin-right: 10px;
+}
+.contacts-text {
+    line-height: 1.5rem;
+}
+
+/* ==========================================================================
+   REGISTRATION
+   ========================================================================== */
+
+.reg form .form-group:nth-child(3) {
+    margin-bottom: 40px;
+}
+.reg-text {
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   ADD-WORK
+   ========================================================================== */
+
+.nomination {
+    font-family: "SFUIDisplay-Medium";
+}
+.add-work h2 {
+    margin-bottom: 20px;
+}
+.add-work h3 {
+    margin-bottom: 40px;
+}
+.file-input-wrapper {
+    margin-bottom: 20px;
+}
+.add-work fieldset {
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   LK
+   ========================================================================== */
+#user-name {
+    font-family: "SFUIDisplay-Medium";
+}
+.lk-menu {
+    margin-bottom: 30px;
+}
+#lk-city {
+    margin-bottom: 30px;
+}
+.add-work-item .lk-menu_item-link {
+    color: orange;
+}
+.lk p.reg-help {
+    margin-bottom: 30px;
+}
+.result-help {
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   KONKURS
+   ========================================================================== */
+
+.for-kids-item {
+    margin-bottom: 10px;
+}
+.for-teachers-item {
+    margin-bottom: 10px;
+}
+.konkurs-desc {
+    margin-bottom: 30px;
+}
+
+/* ==========================================================================
+   PUBLISH
+   ========================================================================== */
+
+.sidebar {
+    margin-bottom: 30px;
+}
+.publish-title {
+    margin: 0;
+    font-size: 21px;
+}
+.publish-category-item {
+    margin-bottom: 10px;
+}
+.publish-category-item a.active {
+    color: orange;
+}
+.publish-category-title {
+
+}
+.publish-in-category-item {
+    margin-bottom: 30px;
+}
+.publish-in-category-item h3 {
+    margin-top: 0;
+    font-family: "SFUIDisplay-Medium";
+    font-size: 1.2rem;
+}
+.read-more {
+    text-decoration: underline;
+}
+.read-more:hover {
+    text-decoration: none;
+}
+.author {
+    margin-bottom: 20px;
+    color: gray;
+}
+.author-name {
+    color: #000;
+    font-family: "SFUIDisplay-Medium"; 
+}
